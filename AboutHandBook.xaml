@@ -1,0 +1,140 @@
+﻿<Window x:Class="HandBook_2020.AboutHandBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HandBook_2020"
+        mc:Ignorable="d"
+        Title="AboutHandBook" Height="700" Width="1200" Topmost="True" Cursor="Arrow" FontFamily="Arial" FontSize="14" FontWeight="Bold" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" BorderBrush="Black" BorderThickness="1" >
+    <Grid Style="{StaticResource FirstLoad}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600"/>
+            <ColumnDefinition Width="500"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75"/>
+            <RowDefinition Height="200"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3 " Margin="0 10 0 0 ">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="smalllogo.png" Stretch="Uniform"/>
+            </StackPanel.Background>
+        </StackPanel>
+        <!--Описание сборника-->
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="14">
+             «Сборник региональных нормативных документов для безаварийного строительства скважин на месторождениях ООО «ЛУКОЙЛ-ПЕРМЬ» разработан
+              в соответствии c Годовой координационной программы научно-технических работ Группы «ЛУКОЙЛ» на  2019-2020  годы <LineBreak/>
+            </TextBlock>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="Wrap" FontSize="14" Padding="2">
+            Цели разработки сборника: <LineBreak/>
+-	создание эффективной системы взаимодействия и организации буровых работ в ООО «ЛУКОЙЛ-Инжиниринг» «ПермНИПИнефть» в г. Перми и  <LineBreak/> ООО «ЛУКОЙЛ-ПЕРМЬ»;<LineBreak/>
+-	оценка соответствия применяемых технологий буровых работ утверждённым ПСД; <LineBreak/>
+-	повышения качества ПСД;<LineBreak/>
+-	 повышение качества работ;<LineBreak/>
+-	 повышение исполнительской дисциплины  и  ответственности подрядчиков за качество выполнения работ при строительстве скважин на месторождения ООО «ЛУКОЙЛ-ПЕРМЬ»;<LineBreak/>
+-	установление единых подходов, обеспечивающих безаварийное проведение работ на месторождениях ООО «ЛУКОЙЛ-ПЕРМЬ».<LineBreak/>
+            </TextBlock>
+        </StackPanel>
+        <!--участники разработки-->
+        <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" Margin="1">
+            <ScrollViewer VerticalScrollBarVisibility="Visible" CanContentScroll="True" Height="383">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel  Orientation="Horizontal"
+                                 Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                                 HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <TextBlock  HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                    FontSize="16" FontWeight="Black" FontFamily="Segoe Script" TextWrapping="Wrap">
+                            
+                            В РАЗРАБОТКЕ СБОРНИКА ПРИНИМАЛИ  УЧАСТИЕ
+                        </TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical" 
+                                Grid.Row="1" Grid.Column="0" HorizontalAlignment="Stretch"
+                                Margin="10 0 10 0" Grid.ColumnSpan="1">
+                        <TextBlock FontSize="15" FontWeight="SemiBold" TextWrapping="Wrap" HorizontalAlignment="Center">
+                            Филиал ООО "ЛУКОЙЛ - Инжиниринг" "ПермНИПИнефть" в г. Перми
+                        </TextBlock>
+                        <TextBlock TextWrapping="Wrap" FontSize ="14"  FontWeight="DemiBold">
+                            Гаршина О.В. - Начальник УТСС <LineBreak/>
+                            Хвощин П.А. - Начальник ОБР и ТЖ <LineBreak/> 
+                            Некрасова И.Л. - Главный научный сотрудник ОБР и ТЖ <LineBreak/>
+                            Харин С.С. - Инженер 1-й категории ОБР и ТЖ<LineBreak/> 
+                            Шлапацкий М.Н. - Ведущий инженер ОБР и ТЖ <LineBreak/>
+                            Синицын А.А. - Инженер 1-й категории ОБР и ТЖ<LineBreak/>
+                            Ганеев Н.А. - Инженер ОБР и ТЖ <LineBreak/>
+                            Бикмухаметов А.И. - Заведующий ЛТТСС<LineBreak/>
+                            Мустаев Р.М. - Научный сотрудник ЛТТСС <LineBreak/>
+                            Кобелев Н.Г. - Инженер 2-й категории ЛТТСС<LineBreak/>
+                            Чушевиков Е.И. - Инженер 1-й категории ЛТТСС<LineBreak/>
+                            Кузнецов Е.Н. - Инженер 2-й категории ЛТТСС<LineBreak/>
+                            Мальков Ю.В.- Начальник ОМСС по проектам ООО "ЛУКОЙЛ-ПЕРМЬ"<LineBreak/>
+                            Азанов А.А. - Инженер 1-й категории ОМСС по проектам ООО "ЛУКОЙЛ-ПЕРМЬ"<LineBreak/>
+                            Мещеряков К.В. - Ведущий инженер ОМСС по проектам ООО "ЛУКОЙЛ-ПЕРМЬ"<LineBreak/> 
+                            Балдин Р.В. - Ведущий инженер ОМСС по проектам ООО "ЛУКОЙЛ-ПЕРМЬ"<LineBreak/> 
+                            Девяткин А.М. - Главный специалист ОМСС по проектам ООО "ЛУКОЙЛ-ПЕРМЬ"<LineBreak/> 
+                            Фефелов Ю.В. - Начальник ОРРП г. Пермь <LineBreak/> 
+                            Ившин А.В. - Главный специалист ОРРП г. Пермь <LineBreak/> 
+                            Софьин И.Ю. - Инженер 1-й категории ОМСС по проектам ООО "ЛУКОЙЛ-ПЕРМЬ"<LineBreak/>
+                            Кудимов И.А. - Начальник ОТСС<LineBreak/> 
+                            Чугаева О.А. - Главный специалист ОТКС<LineBreak/>
+                            Радостев В.В. - Инженер 1-й категории ОТКС<LineBreak/>
+                            Мясникова А.В. - Инженер 1-й категории ОТКС<LineBreak/>
+                            Уткин Д.А. - Ведущий инженер ОТКС <LineBreak/>
+                            Овчинникова Ю.В. Инженер 1-й категории ОТКС<LineBreak/>
+                            Столбов К.Э. - Инженер ОТКС <LineBreak/> 
+                            Дружинин М.А.- Ведущий инженер ОТКС <LineBreak/>
+                            Ибраев В.Л. - Инженер 2-й категории ОТКС <LineBreak/>
+                            Фрезе А.Э. - Ведущий инженер ОКМС <LineBreak/>
+                            Кучевасов С.И. - Главный инженер проекта ОКМС <LineBreak/>
+                            Козлович И.Н. - Начальник ОТТДНГ по проектам ООО "ЛУКОЙЛ-ПЕРМЬ"  <LineBreak/>
+                            Кузнецов В.В. - Ведущий инженер ОТТДНГ по проектам ООО "ЛУКОЙЛ-ПЕРМЬ" <LineBreak/>
+                            Фигильянтов А.П. - Ведущий инженер ОТКС
+                        </TextBlock>
+                    </StackPanel>
+                    <!--список ООО "ЛП"-->
+                    <StackPanel Orientation="Vertical" 
+                                Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch"
+                                Margin="10 0 10 0" Grid.ColumnSpan="1">
+                        <TextBlock FontSize="18" FontWeight="SemiBold" TextWrapping="Wrap" HorizontalAlignment="Center">
+                            ООО "ЛУКОЙЛ - ПЕРМЬ"
+                        </TextBlock>
+                        <TextBlock TextWrapping="Wrap" FontSize ="14"  FontWeight="DemiBold">
+                            Шерстнев И.В.  - Начальник Управления по бурению <LineBreak/>
+                            Жаков А.П. - Начальник Производственного отдела <LineBreak/>
+                            Мерсон С.О. - Инженер 2-й категории Производственного отдела <LineBreak/>
+                            Тарасенко А.А. - Начальник Технологического отдела  <LineBreak/> 
+                            Неволина Ю.Д. - Ведущий инженер Технологического отдела <LineBreak/>
+                            Широков А.В. - Ведущий инженер Технологического отдела <LineBreak/> 
+                            Каташинский Д.Н. - Ведущий инженер Технологического отдела <LineBreak/>
+                            Каримов Д.И. - Ведущий инженер Технологического отдела <LineBreak/>
+                            Предеин И.А. - Ведущий инженер Технологического отдела  <LineBreak/>
+                            Симанов К.А. - Ведущий инженер Технологического отдела <LineBreak/>
+                            Мосин А.В.- Начальник службы по контролю за бурением <LineBreak/>
+                            Черных И.А. - Начальник отдела Геофизики <LineBreak/>
+                            Чухлов А.С. - Ведущий инженер отдела Геофизики <LineBreak/>
+
+                        </TextBlock>
+                    </StackPanel>
+                </Grid>
+
+            </ScrollViewer>
+        </StackPanel>
+        <Button x:Name="btnCloseHBAbt" Grid.Row="3" Grid.Column="2"
+                Style="{StaticResource topbuttonCommonStyle}" 
+                Click="btnCloseHBAbt_Click">
+            <TextBlock Text="ЗАКРЫТЬ"/>
+        </Button>
+    </Grid>
+</Window>

@@ -1,0 +1,300 @@
+﻿<Window x:Class="HandBook_2020.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HandBook_2020"
+        mc:Ignorable="d"
+        Title="СБОРНИК РЕГИОНАЛЬНЫХ НОРМАТИВНЫХ ДОКУМЕНТОВ ДЛЯ БЕЗАВАРИЙНОГО СТРОИТЕЛЬСТВА СКВАЖИН" Height="724" Width="1024" Icon="lukoillogo.png" FontFamily="Arial Black" WindowStartupLocation="CenterScreen"
+        Foreground="Black" WindowStyle="ThreeDBorderWindow" Topmost="False" MinWidth="900" MinHeight="663" WindowState="Maximized" >
+
+
+    <Grid Style="{StaticResource FirstLoad}">
+
+
+
+
+        <!--Разметка сетки общего поля-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="35"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="100"/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <!--КНОПКА МЕНЮ-->
+        <Button x:Name="btnMenu" Style= "{StaticResource topbuttonCommonStyle}" 
+                   Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" 
+                   HorizontalContentAlignment="Center" Click="btnMenu_Click">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch">
+                <TextBlock Margin="0" Text ="СОДЕРЖАНИЕ" HorizontalAlignment="Stretch" VerticalAlignment="Center"/>
+            </StackPanel>
+        </Button>
+
+        <!-- Средняя часть верхнего меню-->
+        <StackPanel Orientation="Horizontal" Margin="0" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" Background="White" HorizontalAlignment="Center">
+            <TextBlock  x:Name="HeaderText" 
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"  
+                       FontWeight="Bold"	
+                       Margin="5 0 0 0" Style="{StaticResource HeaderStyle}"/>
+        </StackPanel>
+        <!--справка справа вверху-->
+        <Button x:Name="btnFAQMenu" Grid.Row="0" Grid.Column="3" Style="{StaticResource topbuttonCommonStyle}" Click="btnFAQMenu_Click">
+            <StackPanel>
+                <TextBlock Text="СПРАВКА"/>
+            </StackPanel>
+        </Button>
+
+        <!--Боковое меню-->
+
+        <StackPanel ButtonBase.Click="sideMenu_Click"
+                    Orientation="Vertical" Grid.Column="0" 
+                    Grid.ColumnSpan="2" Grid.Row="1" Grid.RowSpan="2"
+                    VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                    Background="White" Margin="1" Visibility ="Collapsed"
+                    x:Name="sideMenu" 
+                    Style="{StaticResource SlowShow}">
+            <!--Разметка под кнопки бкового меню-->
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+            </Grid>
+            <!--Конпки бокового меню-->
+            <Button Grid.Row="0" x:Name="btnIntroduction" Style="{StaticResource buttonCommonStyle}"
+                   >
+                <TextBlock Padding="7" HorizontalAlignment="Left">
+                         Введение
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="1" x:Name="btnDrillingOrganization" 
+                    Style="{StaticResource buttonCommonStyle}" >
+                <StackPanel>
+                    <TextBlock TextWrapping="WrapWithOverflow">
+                  Организация буровых
+                    </TextBlock>
+                    <TextBlock Text=" работ" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="2" x:Name="btnWellDesign" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7" HorizontalAlignment="Left">
+                    Проектирование
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="3" x:Name="btnWellConstructionTechnology" Style="{StaticResource buttonCommonStyle}">
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap">
+                    Технология строительства
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Center">
+                    скважин
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="4" x:Name="btnDrillingFluids" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7" HorizontalAlignment="Left">
+                         Буровые растворы
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="5" x:Name="btnCementing" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7" HorizontalAlignment="Left">
+                         Крепление
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="6" x:Name="btnLWD" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7" HorizontalAlignment="Left">
+                         ГИС в процессе бурения
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="7" x:Name="btnPlugging" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7">
+                         Установка мостов
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="8" x:Name="btnTesting" Style="{StaticResource buttonCommonStyle}">
+                <StackPanel>
+                    <TextBlock TextWrapping="Wrap">
+                         Испытание в процессе
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Center">
+                          бурения
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="9" x:Name="btnBOP" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7">
+                        ПВО
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="10" x:Name="btnSealing" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7">
+                       Ликвидация поглощений
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="11" x:Name="btnComplication" Style="{StaticResource buttonCommonStyle}">
+                <StackPanel>
+                    <TextBlock>
+                       Предупреждение и борьба
+                    </TextBlock>
+                    <TextBlock HorizontalAlignment="Center">
+                          с осложнениями
+                    </TextBlock>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Row="12" x:Name="btnSideTracking" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7">
+                       Зарезка боковых стволов
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="13" x:Name="btnProduction" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7">
+                       Освоение
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="14" x:Name="btnShutOff" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7">
+                       Глушение
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="15" x:Name="btnFixCasing" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7">
+                      РИР
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="16" x:Name="btnPump" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7">
+                       ГНО
+                </TextBlock>
+            </Button>
+
+            <Button Grid.Row="17" x:Name="btnUKDPS" Style="{StaticResource buttonCommonStyle}">
+                <TextBlock Padding="7">
+                       ВКМКС
+                </TextBlock>
+            </Button>
+
+
+        </StackPanel>
+        <!--Спавочники-->
+        <StackPanel ButtonBase.Click="FAQMenu_Click"
+                    Orientation="Vertical" Grid.Row="1"
+                    Grid.Column="3" Style="{StaticResource SlowShow}"
+                    Margin="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                    Background="White" x:Name="FAQMenu"
+                    Visibility="Collapsed">
+            <!-- разметка под кнопки-->
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            </Grid>
+            <Button x:Name="bntFAQ" Style="{StaticResource buttonCommonStyle}"
+                    Grid.Row="0" Margin="1">
+                <TextBlock Padding="7">
+                      Как работает
+                </TextBlock>
+            </Button>
+            <Button x:Name="btnAboutBook" Grid.Row="1" Style="{StaticResource buttonCommonStyle}" >
+                <StackPanel>
+                    <TextBlock Padding="7" Text="О Сборнике"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="2" x:Name="btnAbout" 
+                    Style="{StaticResource buttonCommonStyle}" 
+                    VerticalAlignment="Bottom"
+                    Margin="1">
+                <TextBlock Padding="7">
+                      О программе
+                </TextBlock>
+            </Button>
+
+        </StackPanel>
+        <!--просмотр PDF-->
+        <Grid x:Name="ForPDF" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+
+            <DockPanel x:Name ="PDFDock" LastChildFill="True" >
+
+                <DockPanel.Background>
+                    <ImageBrush  ImageSource="lukoillogo_FULL.png" Stretch="Uniform" />
+                </DockPanel.Background>
+                <Border x:Name="PDFBorder" Background="Transparent" BorderBrush="Black"
+                        BorderThickness="1" Visibility="Collapsed" Margin="1">
+                    <WindowsFormsHost x:Name="PDFHost" HorizontalAlignment="Stretch" 
+                                  Margin="1" VerticalAlignment="Stretch" 
+                                  Background ="Transparent" 
+                                  Visibility="Collapsed"/>
+                </Border>
+            </DockPanel>
+
+
+        </Grid>
+        <!--Логотоп  внизу Слева-->
+        <Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="1" Margin="1">
+
+            <StackPanel x:Name="SmallLogo" Style="{StaticResource SlowShow}" Visibility="Collapsed">
+                <StackPanel.Background >
+                    <ImageBrush  ImageSource="smalllogo.png" Stretch="Uniform"/>
+                </StackPanel.Background>
+            </StackPanel>
+
+        </Grid>
+        <!--Кнопка закрыть спава внизу-->
+        <Grid Grid.Row="2" Grid.Column="3" Margin="1">
+            <Button x:Name="btnShutDown" Style="{StaticResource topbuttonCommonStyle}" Click="btnShutDown_Click">
+                <StackPanel>
+                    <TextBlock Text="ЗАКРЫТЬ"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+
+
+    </Grid>
+
+
+
+</Window>
